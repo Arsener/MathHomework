@@ -11,7 +11,7 @@ def solve(A_, b):
     # 消元
     for i in range(size - 1):
         # 找到主元
-        k = np.argwhere(abs(A[i:size, i]) == max(abs(A[i:size, i]))[0, 0])[0, 0]
+        k = np.argmax(abs(A[i:size, i]))
         # 交换行
         if k != 0:
             tmp = copy.copy(A[k + i])
