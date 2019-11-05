@@ -34,7 +34,7 @@ def f_deri(x):
 def question_1(x):
     cnt = 0
     # 当超过最大迭代次数时停止迭代，下同
-    while cnt <= MAX_ITER:
+    while cnt < MAX_ITER:
         x_n = phi_1(x)
         cnt += 1
         if x_n == x:
@@ -47,7 +47,7 @@ def question_1(x):
 # 第二问
 def question_2(x):
     cnt = 0
-    while cnt <= MAX_ITER:
+    while cnt < MAX_ITER:
         x_n = phi_2(x)
         cnt += 1
         if x_n == x:
@@ -60,7 +60,7 @@ def question_2(x):
 # 第三问
 def question_3(x):
     cnt = 0
-    while cnt <= MAX_ITER:
+    while cnt < MAX_ITER:
         y = phi_1(x)
         # 当x和y的差值足够小时提前停止迭代
         if abs(x - y) < ERROR:
@@ -75,7 +75,7 @@ def question_3(x):
 # 第四问
 def question_4(x):
     cnt = 0
-    while cnt <= MAX_ITER:
+    while cnt < MAX_ITER:
         y = phi_2(x)
         if abs(x - y) < ERROR:
             break
@@ -89,7 +89,7 @@ def question_4(x):
 # 第五问
 def question_5(x):
     cnt = 0
-    while cnt <= MAX_ITER:
+    while cnt < MAX_ITER:
         x_n = x - f(x) / f_deri(x)
         cnt += 1
         if x_n == x:
