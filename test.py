@@ -23,6 +23,6 @@ if __name__ == '__main__':
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.plot(x, y, color='m', linestyle='', marker='o', label='给定数据')
     plt.plot(t, c5, color='b', linestyle='-', marker='', label="拉格朗日插值曲线")
-    # plt.plot(t, c3, color='g', linestyle='-', marker='', label="三次样条插值曲线")
+    plt.plot(t, c3, color='g', linestyle='-', marker='', label="三次样条插值曲线")
     plt.legend(loc='best')
     plt.show()
