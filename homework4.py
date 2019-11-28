@@ -2,7 +2,6 @@
 P190-2
 '''
 
-import numpy as np
 import matplotlib.pyplot as plt
 
 
@@ -33,7 +32,7 @@ def Lagrange(x, fx):
     return polynomial
 
 
-# 三次样条插值
+# 三次样条插值，二型边界条件，默认自然边界条件
 def spline_II_edge(x, fx, M_0=0., M_n=0.):
     n = len(x)
     # h
