@@ -9,8 +9,8 @@ def fit(x, y, n):
     x = np.array(x, dtype=np.float64)
     y = np.array(y, dtype=np.float64)
 
-    A = np.array([[np.sum((x ** i).dot(x ** j)) for j in range(n + 1)] for i in range(n + 1)])
-    b = np.array([np.sum(y.dot(x ** i)) for i in range(n + 1)])
+    A = np.array([[np.sum((x ** i).dot(x ** j)) for j in range(n + 1)] for i in range(n + 1)], dtype=np.float64)
+    b = np.array([np.sum(y.dot(x ** i)) for i in range(n + 1)], dtype=np.float64)
     a = np.linalg.inv(A).dot(b)
 
     def func(new_x):
