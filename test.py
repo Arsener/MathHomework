@@ -1,9 +1,11 @@
-# -*- coding: UTF-8 -*-
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy.interpolate import *
+from sympy import *
 
+x = Symbol('x')
+d = diff((x ** 3 - x) ** 2, x, 4)
+print(d)
 
-a = np.array([[1, 2], [3, 4]])
+ans = solve(d, x)
+print(ans)
 
-print(a ** 0)
+for a in ans:
+    print(a.evalf())
