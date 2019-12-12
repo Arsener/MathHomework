@@ -43,5 +43,5 @@ def Gauss_Legendre(f, a, b, n, h=1):
 
 if __name__ == '__main__':
     ans = Gauss_Legendre(func, 1, 3, 4, 10)
-    print('The integral result of the function on 1 to 3 is{}'.format(ans))
+    print('The integral result of the function on 1 to 3 is {}'.format(ans))
 
